@@ -37,13 +37,13 @@ A persistência foi realizada através do SQLite, um sistema de gerenciamento de
 4. ***Metodologia de Desenvolvimento***
 O desenvolvimento seguiu uma abordagem orientada à consistência documental, onde:
 
-1. Requisitos e Regras de Negócio definiram as restrições do sistema.
+- Requisitos e Regras de Negócio definiram as restrições do sistema.
 
-2. Diagramas de Casos de Uso e Atividade mapearam o comportamento esperado.
+- Diagramas de Casos de Uso e Atividade mapearam o comportamento esperado.
 
-3. Diagramas de Classe e Sequência nortearam a estrutura do código e a interação entre as camadas.
+- Diagramas de Classe e Sequência nortearam a estrutura do código e a interação entre as camadas.
 
-4. A Implementação refletiu rigorosamente o que foi planejado nos artefatos de UML.
+- A Implementação refletiu rigorosamente o que foi planejado nos artefatos de UML.
 
 
 5. ***Conclusão***
