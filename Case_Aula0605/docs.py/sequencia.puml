@@ -1,0 +1,41 @@
+@startuml
+skinparam theme materia
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+package "Camada de Domínio" {
+    class Produto {
+        - id: Integer
+        - nome: String
+        - preco: Float
+        - estoque: Integer
+        + validarEstoque(qtd): Boolean
+    }
+    
+    class Venda {
+        - id: Integer
+        - data: DateTime
+        - total: Float
+    }
+}
+
+package "Infraestrutura" {
+    class ProdutoRepository {
+        + salvar(produto)
+        + buscarTodos(): List
+        + atualizarEstoque(id, qtd)
+    }
+}
+
+package "Lógica de Negócio" {
+    class ProdutoService {
+        - repository: ProdutoRepository
+        + cadastrar(nome, preco, qtd)
+        + realizarVenda(id, qtd)
+    }
+}
+
+ProdutoService --> ProdutoRepository : usa
+Venda "0..*" -- "1" Produto : referencia >
+
+@enduml
