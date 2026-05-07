@@ -19,15 +19,15 @@ O projeto consiste no desenvolvimento de um sistema enxuto voltado para a Gestã
    
 Para garantir a escalabilidade e a manutenção do sistema, foi adotada a arquitetura em camadas seguindo o padrão MVC (Model-View-Controller), complementado pelas camadas de Service e Repository:
 
-. View: Interface de interação (implementada em versões Terminal e Web/Flask).
+- View: Interface de interação (implementada em versões Terminal e Web/Flask).
 
-. Controller: Intermediário que gerencia o fluxo de dados entre a interface e a lógica.
+- Controller: Intermediário que gerencia o fluxo de dados entre a interface e a lógica.
 
-. Service: Concentra as Regras de Negócio, como validação de preços positivos e verificação de disponibilidade de estoque.
+- Service: Concentra as Regras de Negócio, como validação de preços positivos e verificação de disponibilidade de estoque.
 
-. Repository: Responsável pela abstração do acesso aos dados e persistência.
+- Repository: Responsável pela abstração do acesso aos dados e persistência.
 
-. Model: Representação das entidades do domínio (Produto e Venda).
+- Model: Representação das entidades do domínio (Produto e Venda).
 
 
 3. ***Persistência de Dados***
